@@ -3,47 +3,73 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import jewel1 from '../assets/jewel (1).jpg';
+import jewel2 from '../assets/jewel (2).jpg';
+import jewel3 from '../assets/jewel (3).jpg';
+import jewel4 from '../assets/jewel (4).jpg';
+import jewel5 from '../assets/jewel (5).jpg';
+import jewel6 from '../assets/jewel (6).jpg';
+import jewel7 from '../assets/jewel (6).jpg';
+import jewel8 from '../assets/jewel (8).jpg';
+import jewel9 from '../assets/jewel (9).jpg';
+import jewel10 from '../assets/jewel (10).jpg';
+import jewel11 from '../assets/jewel (11).jpg';
+import jewel12 from '../assets/jewel (12).jpg';
+import jewel13 from '../assets/jewel (13).jpg';
+import jewel14 from '../assets/jewel (14).jpg';
+import jewel15 from '../assets/jewel (15).jpg';
+import jewel16 from '../assets/jewel (16).jpg';
+import jewel17 from '../assets/jewel (17).jpg';
+import jewel18 from '../assets/jewel (18).jpg';
+import jewel19 from '../assets/jewel (19).jpg';
+import jewel20 from '../assets/jewel (20).jpg';
+import jewel21 from '../assets/jewel (21).jpg';
+import jewel22 from '../assets/jewel (22).jpg';
+import jewel23 from '../assets/jewel (23).jpg';
+import jewel24 from '../assets/jewel (24).jpg';
+import jewel25 from '../assets/jewel (25).jpg';
+import jewel26 from '../assets/jewel (26).jpg';
+import jewel27 from '../assets/jewel (27).jpg';
 const categories = [
   {
     name: "Chains",
     images: [
-      jewel1
-      "https://i.ibb.co/W0bZmTx/chain2.jpg",
-      "https://i.ibb.co/0JXZpbb/chain3.jpg",
-      "https://i.ibb.co/fF5Rvyz/chain4.jpg",
-      "https://i.ibb.co/34M0qD0/chain5.jpg",
-      "https://i.ibb.co/q0M91Qb/chain6.jpg",
-      "https://i.ibb.co/vHVkYrS/chain7.jpg",
-      "https://i.ibb.co/hYBY3F2/chain8.jpg",
-      "https://i.ibb.co/xYg0mW2/chain9.jpg"
+      jewel1,
+      jewel2,
+      jewel3,
+      jewel4,
+      jewel5,
+      jewel6,
+      jewel7,
+      jewel8,
+      jewel9,
     ]
   },
   {
     name: "Necklaces",
     images: [
-      "https://i.ibb.co/Z1c5R3V/chain1.jpg",
-      "https://i.ibb.co/W0bZmTx/chain2.jpg",
-      "https://i.ibb.co/0JXZpbb/chain3.jpg",
-      "https://i.ibb.co/fF5Rvyz/chain4.jpg",
-      "https://i.ibb.co/34M0qD0/chain5.jpg",
-      "https://i.ibb.co/q0M91Qb/chain6.jpg",
-      "https://i.ibb.co/vHVkYrS/chain7.jpg",
-      "https://i.ibb.co/hYBY3F2/chain8.jpg",
-      "https://i.ibb.co/xYg0mW2/chain9.jpg"
+      jewel10,
+      jewel11,
+      jewel12,
+      jewel13,
+      jewel14,
+      jewel15,
+      jewel16,
+      jewel17,
+      jewel18,
     ]
   },
   {
     name: "Bracelets",
     images: [
-      "https://i.ibb.co/Z1c5R3V/chain1.jpg",
-      "https://i.ibb.co/W0bZmTx/chain2.jpg",
-      "https://i.ibb.co/0JXZpbb/chain3.jpg",
-      "https://i.ibb.co/fF5Rvyz/chain4.jpg",
-      "https://i.ibb.co/34M0qD0/chain5.jpg",
-      "https://i.ibb.co/q0M91Qb/chain6.jpg",
-      "https://i.ibb.co/vHVkYrS/chain7.jpg",
-      "https://i.ibb.co/hYBY3F2/chain8.jpg",
-      "https://i.ibb.co/xYg0mW2/chain9.jpg"
+     jewel19,
+     jewel20,
+     jewel21,
+     jewel22,
+     jewel23,
+     jewel24,
+     jewel25,
+     jewel26,
+     jewel27,
     ]
   }
 ];
