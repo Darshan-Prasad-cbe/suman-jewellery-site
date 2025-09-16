@@ -52,10 +52,28 @@ a {
 }
 
 /* === HERO SECTION === */
+/* === HERO SECTION === */
+.gold-glow {
+  color: #ffd700;
+  font-weight: 700;
+  text-shadow: 0 0 8px #ffd700, 0 0 20px #ffecb3, 0 0 30px #fff;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffd700, 0 0 15px #ffecb3, 0 0 25px #fff;
+  }
+  to {
+    text-shadow: 0 0 15px #f10707, 0 0 30px #f63a06, 0 0 45px #fc0000;
+  }
+}
+
+
 .hero-section {
   position: relative;
   height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/jewel.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('assets/jewel.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,7 +129,7 @@ a {
 .home-description{
   font-size: 22px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fafafa;
   text-shadow:0 0 15px #ffd700, 0 0 30px rgba(0, 0, 0, 0.8);
 }
 /* === SECTION TITLES === */
@@ -131,6 +149,22 @@ a {
 }
 
 /* === PRODUCTS CARDS === */
+/* Floating hint icon */
+.hint-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: bounce 2s infinite alternate;
+  z-index: 10000;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
 .products-section .product-card {
   border-radius: 15px;
   overflow: hidden;
@@ -203,15 +237,21 @@ a {
 }
 
 /* === OFFERS SECTION === */
-.offer-card img {
-  border-radius: 15px;
+.offer-img {
+  width: 450px;       /* Adjust width as needed: 400 or 500 */
+  height: 450px;      /* Adjust height as needed */
+  max-width: 100%;    /* Keeps it responsive on smaller screens */
+  max-height: 100%;
+  object-fit: contain;  /* Ensures the image doesn't stretch */
+  border-radius: 15px; /* keeps the rounded corners */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.offer-card img:hover {
+.offer-img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 35px #ffd700, 0 0 60px rgba(255,215,0,0.6);
 }
+
 
 /* === REVIEWS SECTION === */
 .review-card {
@@ -229,55 +269,63 @@ a {
 }
 
 /* === CONTACT SECTION === */
-.contact-section {
-  background: linear-gradient(135deg, #111, #222);
-}
+/* === CONTACT PAGE SECTIONS === */
 
-.contact-section h2, .contact-section h3 {
-  color: #ffd700;
-  text-shadow: 0 0 15px #ffd700;
-}
-
-.contact-section form {
-  background: #1f1f1f;
-  border-radius: 15px;
-  padding: 2rem;
+/* Left Info Section */
+.info-section {
+  background: linear-gradient(135deg, #222, #333);
   transition: all 0.4s ease;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  padding: 2rem;
+  border-radius: 15px;
+}
+.info-section:hover {
+  box-shadow: 0 0 25px #ffd700, 0 0 50px rgba(255, 215, 0, 0.5);
+  transform: translateY(-3px);
 }
 
-.contact-section form:hover {
-  box-shadow: 0 0 25px #ffd700, 0 0 50px rgba(255,215,0,0.5);
+/* Right Form Section */
+.form-section {
+  background: linear-gradient(135deg, #111, #222);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+}
+.form-section:hover {
+  box-shadow: 0 0 25px #ffd700, 0 0 50px rgba(255, 215, 0, 0.5);
+  transform: translateY(-3px);
 }
 
-.contact-section input, 
-.contact-section textarea {
-  border-radius: 8px;
-  border: 1px solid #555;
-  background: #2b2b2b;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.contact-section input:focus, 
-.contact-section textarea:focus {
-  border-color: #ffd700;
-  box-shadow: 0 0 15px #ffd700;
-  outline: none;
-}
-
-/* === SLICK CAROUSEL === */
-.slick-slide {
-  padding: 0 10px;
-}
-
-.slick-dots li button:before {
-  font-size: 12px;
+/* Gold Glow for Secret PIN */
+.gold-glow {
   color: #ffd700;
-  opacity: 0.7;
+  font-weight: 700;
+  text-shadow: 0 0 8px #ffd700, 0 0 20px #ffecb3, 0 0 30px #fff;
+  animation: glow 2s infinite alternate;
 }
 
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #ffd700;
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffd700, 0 0 15px #ffecb3, 0 0 25px #fff;
+  }
+  to {
+    text-shadow: 0 0 15px #f10707, 0 0 30px #f63a06, 0 0 45px #fc0000;
+  }
+}
+
+/* Floating Hint Icon for Secret PIN */
+.hint-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: bounce 2s infinite alternate;
+  z-index: 10000;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
 }

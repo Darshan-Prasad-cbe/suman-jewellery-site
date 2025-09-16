@@ -8,7 +8,7 @@ import jewel3 from '../assets/jewel (3).jpg';
 import jewel4 from '../assets/jewel (4).jpg';
 import jewel5 from '../assets/jewel (5).jpg';
 import jewel6 from '../assets/jewel (6).jpg';
-import jewel7 from '../assets/jewel (6).jpg';
+import jewel7 from '../assets/jewel (7).jpg';
 import jewel8 from '../assets/jewel (8).jpg';
 import jewel9 from '../assets/jewel (9).jpg';
 import jewel10 from '../assets/jewel (10).jpg';
@@ -29,49 +29,11 @@ import jewel24 from '../assets/jewel (24).jpg';
 import jewel25 from '../assets/jewel (25).jpg';
 import jewel26 from '../assets/jewel (26).jpg';
 import jewel27 from '../assets/jewel (27).jpg';
+
 const categories = [
-  {
-    name: "Chains",
-    images: [
-      jewel1,
-      jewel2,
-      jewel3,
-      jewel4,
-      jewel5,
-      jewel6,
-      jewel7,
-      jewel8,
-      jewel9,
-    ]
-  },
-  {
-    name: "Necklaces",
-    images: [
-      jewel10,
-      jewel11,
-      jewel12,
-      jewel13,
-      jewel14,
-      jewel15,
-      jewel16,
-      jewel17,
-      jewel18,
-    ]
-  },
-  {
-    name: "Bracelets",
-    images: [
-     jewel19,
-     jewel20,
-     jewel21,
-     jewel22,
-     jewel23,
-     jewel24,
-     jewel25,
-     jewel26,
-     jewel27,
-    ]
-  }
+  { name: "Chains", images: [jewel1,jewel2,jewel3,jewel4,jewel5,jewel6,jewel7,jewel8,jewel9] },
+  { name: "Necklaces", images: [jewel10,jewel11,jewel12,jewel13,jewel14,jewel15,jewel16,jewel17,jewel18] },
+  { name: "Bracelets", images: [jewel19,jewel20,jewel21,jewel22,jewel23,jewel24,jewel25,jewel26,jewel27] }
 ];
 
 export default function Products() {
@@ -93,15 +55,26 @@ export default function Products() {
     ]
   };
 
-  const openModal = (img, desc) => {
-    setModalData({open:true,img,desc});
-  }
-
+  const openModal = (img, desc) => setModalData({open:true,img,desc});
   const closeModal = () => setModalData({open:false,img:'',desc:''});
+
+  const showHint = () => {
+    alert("Hint: If you're searching for the secret PIN, it's NOT in the Offers tab! Check all the remaining pages carefully.");
+  }
 
   return (
     <section className="products-section py-5 text-white">
-      <div className="container">
+      <div className="container position-relative">
+
+        {/* Floating Hint Icon */}
+        <div 
+          className="hint-icon"
+          onClick={showHint}
+          title="Click for hint"
+        >
+          💡
+        </div>
+
         <h2 className="section-title">Our Premium Collection</h2>
 
         {categories.map((cat,i)=>(
@@ -130,6 +103,12 @@ export default function Products() {
             </div>
           </div>
         )}
+
+        {/* Footer with secret glowing number */}
+        <hr className="my-4"/>
+        <p className="text-center mb-0">
+          © Darshan <span className="gold-glow">5</span> 2025
+        </p>
       </div>
     </section>
   );
