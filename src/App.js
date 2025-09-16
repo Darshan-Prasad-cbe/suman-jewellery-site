@@ -10,7 +10,6 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <h1>Welcome to Suman Jewellery!</h1>
 
       <Routes>
         <Route path="/" element={<Home />} />
