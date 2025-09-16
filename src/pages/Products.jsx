@@ -2,12 +2,12 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import jewel1 from '../assets/jewel (1).jpg';
 const categories = [
   {
     name: "Chains",
     images: [
-      "https://i.ibb.co/Z1c5R3V/chain1.jpg",
+      jewel1
       "https://i.ibb.co/W0bZmTx/chain2.jpg",
       "https://i.ibb.co/0JXZpbb/chain3.jpg",
       "https://i.ibb.co/fF5Rvyz/chain4.jpg",
